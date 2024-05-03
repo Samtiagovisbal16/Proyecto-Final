@@ -1,30 +1,38 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión de Cuentas Bancarias</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+  <title>Gestión de Cuentas Bancarias</title>
+  <link rel="stylesheet" type="text/css" href="../css/estilos.css">
 </head>
 <body>
-    <h1>Crear Nueva Cuenta Bancaria</h1>
-    <form id="createAccountForm">
-        <label for="accountNumber">Número de Cuenta:</label>
-        <input type="text" id="accountNumber" name="accountNumber" required><br><br>
+  <h1>Gestión de Cuentas Bancarias</h1>
 
-        <label for="bankName">Nombre del Banco:</label>
-        <input type="text" id="bankName" name="bankName" required><br><br>
+  <form id="accountForm">
+    <label for="accountNumber">Número de cuenta:</label>
+    <input type="text" id="accountNumber" required>
 
-        <label for="accountType">Tipo de Cuenta:</label>
-        <input type="text" id="accountType" name="accountType" required><br><br>
+    <label for="bankName">Nombre del banco:</label>
+    <input type="text" id="bankName" required>
 
-        <label for="balance">Saldo:</label>
-        <input type="number" id="balance" name="balance" required><br><br>
+    <label for="accountType">Tipo de cuenta:</label>
+    <input type="text" id="accountType" required>
 
-        <button type="submit">Crear Cuenta</button>
-    </form>
-    <script src="../js/java.js"></script>
+    <label for="currentBalance">Saldo actual:</label>
+    <input type="number" id="currentBalance" required>
+
+    <label for="accountStatus">Estado de la cuenta:</label>
+    <select id="accountStatus" required>
+      <option value="active">Activa</option>
+      <option value="inactive">Inactiva</option>
+      <option value="closed">Cerrada</option>
+    </select>
+
+    <label for="accountDescription">Descripción:</label>
+    <textarea id="accountDescription"></textarea>
+
+    <button type="submit">Guardar</button>
+  </form>
+
+  <script src="script.js"></script>
 </body>
 </html>
