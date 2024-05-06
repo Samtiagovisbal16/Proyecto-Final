@@ -1,0 +1,71 @@
+body {
+    background-image: url('../recursos/img/login.jpg'); /* URL de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif; /* Se recomienda especificar una fuente genérica para mayor compatibilidad */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Utiliza el 100% del alto de la ventana */
+  }
+  
+  .container {
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgba(0, 123, 255, 0.8); /* Fondo semi-transparente azul */
+  }
+  
+  h2 {
+    text-align: center;
+    color: #fff; /* Color de texto blanco */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff; /* Color de texto blanco */
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0056b3; /* Color de fondo azul oscuro para el botón */
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  button:hover {
+    background-color: #003d7f; /* Cambio de color al pasar el ratón */
+  }
+  
+  a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff; /* Color de texto blanco para los enlaces */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+  }
+  
